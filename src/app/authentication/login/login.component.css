@@ -1,0 +1,155 @@
+label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--main-black);
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.image_section {
+    background-color: #EBF5F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_section {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand_image {
+    margin-bottom: 3.4rem;
+    cursor: pointer;
+}
+
+.heading-h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.48rem;
+    max-width: 50%;
+}
+
+.login_paragaph {
+    font-size: 1.3rem;
+    color: #6880AA;
+    line-height: 2.23rem;
+    max-width: 21rem;
+}
+
+.heading-h1,
+.login_paragaph {
+    margin-bottom: 2rem;
+}
+
+.input_section {
+    display: block;
+}
+
+.forgot_password,
+.input_additional label {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.forgot_password {
+    color: var(--primary-color);
+}
+
+.login_checkbox input {
+    margin-right: 1rem;
+    transform: scale(1.2);
+}
+
+.form-control {
+    height: 4.6rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+}
+
+.form-control::placeholder {
+    color: #CFD8E6;
+    font-size: 1.5rem;
+}
+
+.forgot_password {
+    cursor: pointer;
+}
+
+.login_btn {
+    background-color: #1D7083;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    margin-top: 3.6rem;
+    width: 100%;
+    padding: 1.6rem;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.input_additional {
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .image_section img {
+        max-width: 100%;
+        height: auto;
+    }
+    .login_checkbox label,
+    .forgot_password {
+        font-size: 1.3rem;
+    }
+    .login_checkbox input{
+        margin-right: .8rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .col-md-6.image_section {
+        display: none;
+    }
+
+    .login_paragaph,.heading-h1 {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width:768px) {
+    .col-md-6.login_section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .login_checkbox input {
+        transform: scale(1);
+        margin-right: .5rem;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .login_btn {
+        padding: 1rem;
+    }
+
+    .input_additional {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

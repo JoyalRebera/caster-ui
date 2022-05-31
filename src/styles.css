@@ -1,0 +1,109 @@
+:root {
+    --flash-white: #EBF5F8;
+    --color-primary: #1D7083;
+    --color-secondary: #597C85;
+    --main-black: #08252C;
+    --light-blue: #F2F6F6;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+    color: var(--main-black)
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.main {
+    padding: 0;
+}
+
+/* utility classes */
+
+.dashboad_container,
+.audit_container,
+.table_container {
+    margin-top: 2vw;
+}
+
+/*overwrite bootstrap property  */
+.flex_0 {
+    flex: 0 1 !important;
+}
+
+/* font weight */
+.f_w_900 {
+    font-weight: 900;
+}
+
+.f_w_700 {
+    font-weight: 700;
+}
+
+
+/* ovver write mat sidebar  */
+p {
+    margin-bottom: 0 !important;
+}
+
+.mat-drawer-inner-container {
+    overflow: hidden !important;
+    padding: 1vw 1vw 1vw 0;
+}
+
+@media (max-width:576px) {
+    .-row,
+    .-single-row {
+        padding: 0 .5rem !important;
+    }
+    mat-sidenav {
+        width: 40vw;
+    }
+}
+
+/* ovver write mat toolbar  */
+. {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 5px rgba(207, 216, 230, 0.3)
+}
+/* over write popover */
+.popovert {
+    cursor: pointer !important;
+     font-size: 1.5rem !important;
+     font-family: inherit !important;
+ }
+ 

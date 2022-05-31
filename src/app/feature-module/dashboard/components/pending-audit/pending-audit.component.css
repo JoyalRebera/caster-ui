@@ -1,0 +1,60 @@
+.card {
+    border-radius: .8rem;
+}
+
+.card-header {
+    background: none;
+    padding: 1vw 1rem;
+}
+
+.pending_header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pending_heading {
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+}
+
+.pending_heading p {
+    font-size: 1.3rem;
+}
+
+.card_dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #F5785D;
+}
+
+.pending_subheading {
+    gap: 1rem;
+}
+
+.pending_subheading p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.pending_body {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    min-height: 24rem;
+}
+
+.pending_body_info {
+    color: var(--color-secondary);
+    font-size: 1.3rem;
+}
+
+.pending_body_text {
+    width: 35%;
+    max-width: 35%;
+    text-align: center
+}

@@ -1,0 +1,8 @@
+mat-sidenav{
+    background-color: var(--flash-white);
+}
+
+mat-sidenav-content{
+    min-height: 90vh;
+    background-color:#Ffffff;
+}

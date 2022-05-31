@@ -1,0 +1,86 @@
+.table_title_row {
+    margin: 1vw .5vw 0vw .5vw;
+}
+
+.table_title_info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.table_info {
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.table_info img {
+    max-width: 1%;
+}
+
+.table_select {
+    width: 25%;
+}
+
+.table_info_view {
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.form-select {
+    font-size: 1.3rem;
+}
+
+
+table {
+    width: 100%;
+    margin: 2vw 0 2vw 0;
+    box-shadow: none;
+}
+
+.mat-table {
+    font-family: 'Lato', sans-serif;
+}
+
+th[mat-header-cell] {
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--light-blue);
+}
+
+td[mat-cell] {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.dashboard_text_popover {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 8rem;
+    gap: .6rem;
+}
+.table-viewmore{
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.table_noContent_msg{
+    min-height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+.table_noContent_msg p{
+    font-size: 1.3rem;
+}

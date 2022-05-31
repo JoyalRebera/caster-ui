@@ -1,0 +1,87 @@
+.home__sidebar__dashboard {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.home__sidebar__dashboard p {
+    font-size: 1.3rem;
+}
+
+.home__sidebar__dashboard img {
+    padding: 1rem 1rem 1rem 2vw;
+}
+
+@media (min-width:992px)and (max-width:1100px) {
+    .home__sidebar__dashboard {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width:576px) {
+    .home__sidebar__dashboard.active p {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .home__sidebar__dashboard p {
+        font-size: 1.2rem;
+    }
+
+}
+
+.home__sidebar__dashboard.active {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--color-primary);
+    
+}
+
+.home__sidebar__dashboard.dashboard span {
+    background-image: url(../../../assets/images/Menubar/Icon/dashboad_home.svg);
+}
+
+.home__sidebar__dashboard.audit span {
+    background-image: url(../../../assets/images/Menubar/Icon/dashboard_myaudit.svg);
+}
+
+.home__sidebar__dashboard.dashboard span,
+.home__sidebar__dashboard.audit span {
+    width: 5rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-right: .5rem;
+}
+
+.home__sidebar__dashboard.dashboard.active span {
+    background-image: url(../../../assets/images/Menubar/Icon/dashboad_home_active.svg);
+}
+
+.home__sidebar__dashboard.audit.active span {
+    background-image: url(../../../assets/images/Menubar/Icon/clipboard_active.svg);
+}
+
+.home__sidebar__dashboard.dashboard.active span,
+.home__sidebar__dashboard.audit.active span { 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-primary);
+    border-radius: 0px 8px 8px 0px;
+}
+
+.home__sidebar__dashboard.dashboard .blank_space,
+.home__sidebar__dashboard.audit .blank_space{
+    width: .5vw;
+}
+
+.home__sidebar__dashboard.dashboard.active .blank_space,
+.home__sidebar__dashboard.audit.active .blank_space{
+    background-color: var(--color-primary);
+    height: 4rem;
+}
+

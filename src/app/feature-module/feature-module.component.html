@@ -1,0 +1,21 @@
+<!-- tollbar -->
+<mat-toolbar>
+  <div class="w-100 d-flex align-items-center">
+    <button (click)="sidenav.toggle()" mat-icon-button *ngIf="sidenav.mode==='over'"
+      aria-label="Example icon-button with menu icon">
+      <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+      <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+    </button>
+    <app-navbar class="w-100"></app-navbar>
+  </div>
+</mat-toolbar>
+<!-- sidebar -->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="col-lg-2 col-md-4">
+    <app-side-bar></app-side-bar>
+  </mat-sidenav>
+
+  <mat-sidenav-content>  
+      <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
